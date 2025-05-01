@@ -9,23 +9,42 @@ const dailyMessage = document.getElementById('daily-message');
 const birthdayAudio = document.getElementById('birthday-audio');
 
 // Daily messages array (May 1 to May 15)
+// const messages = [
+//     "15 days to your big day! Here’s to a woman who shines brighter every year. 🖤",
+//     "14 days left! Your 27th is going to be epic, just like you.",
+//     "13 days to go! Get ready for a celebration as bold as your spirit.",
+//     "12 days! You’re about to make 27 look absolutely stunning.",
+//     "11 days left! Your birthday is coming, and it’s going to be unforgettable.",
+//     "10 days to go! Here’s to a year full of love and adventure.",
+//     "9 days! The countdown is on for your special day. 🖤",
+//     "8 days left! You’re a star, and your 27th will shine bright.",
+//     "7 days to go! One week until we celebrate YOU!",
+//     "6 days! The world is better with you in it, and we’re almost there!",
+//     "5 days left! Your birthday is so close, and it’s going to be amazing.",
+//     "4 days to go! Get ready for a day as beautiful as you are.",
+//     "3 days! The excitement is building for your 27th!",
+//     "2 days left! Almost time to pop the confetti and celebrate you. 🖤",
+//     "Tomorrow’s the day! Get ready for a birthday as unforgettable as you are."
+// ];
+
 const messages = [
-    "15 days to your big day! Here’s to a woman who shines brighter every year. 🖤",
-    "14 days left! Your 27th is going to be epic, just like you.",
-    "13 days to go! Get ready for a celebration as bold as your spirit.",
-    "12 days! You’re about to make 27 look absolutely stunning.",
-    "11 days left! Your birthday is coming, and it’s going to be unforgettable.",
-    "10 days to go! Here’s to a year full of love and adventure.",
-    "9 days! The countdown is on for your special day. 🖤",
-    "8 days left! You’re a star, and your 27th will shine bright.",
-    "7 days to go! One week until we celebrate YOU!",
-    "6 days! The world is better with you in it, and we’re almost there!",
-    "5 days left! Your birthday is so close, and it’s going to be amazing.",
-    "4 days to go! Get ready for a day as beautiful as you are.",
-    "3 days! The excitement is building for your 27th!",
-    "2 days left! Almost time to pop the confetti and celebrate you. 🖤",
-    "Tomorrow’s the day! Get ready for a birthday as unforgettable as you are."
+    "15 days to your special day! Your light brightens every room you walk into — may this birthday reflect just how deeply you’re loved. 🖤",
+    "14 days left! You’re stepping into 27 with grace, strength, and beauty — and I can’t wait to celebrate the incredible woman you are becoming.",
+    "13 days to go! Every year, you redefine what it means to be strong, kind, and radiant. Here’s to a celebration worthy of your heart.",
+    "12 days! You’re not just turning 27 — you’re stepping into a chapter full of dreams, laughter, and love you truly deserve.",
+    "11 days left! Life shines a little brighter with you in it. Let’s make this birthday one for the books, just like your story so far.",
+    "10 days to go! May 27 bring you peace in your soul, love in your life, and endless joy — because that’s what you give to others effortlessly.",
+    "9 days! The countdown to you is on — a beautiful soul who inspires, uplifts, and loves so deeply. 🖤",
+    "8 days left! There’s only one you in this world, and that alone is worth celebrating for a lifetime.",
+    "7 days to go! In just one week, we’ll celebrate your presence, your journey, and all the light you bring into people’s lives.",
+    "6 days! You’ve touched so many hearts just by being yourself — this birthday is a tribute to everything you are and everything still to come.",
+    "5 days left! Your birthday is almost here, and I hope it reflects all the love, beauty, and kindness you carry within.",
+    "4 days to go! May this year wrap around you like a warm hug — filled with joy, growth, and moments that remind you how cherished you are.",
+    "3 days! Each day brings us closer to celebrating someone who brings so much meaning into the lives around her.",
+    "2 days left! Let’s get ready to honor the heart, laughter, and light you bring into the world. 🖤",
+    "Tomorrow’s the day! May your birthday be as unforgettable and beautiful as the soul we’re celebrating."
 ];
+
 
 // Initialize default credentials in LocalStorage (for simplicity)
 if (!localStorage.getItem('credentials')) {
