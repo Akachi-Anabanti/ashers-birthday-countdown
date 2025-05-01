@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="login-page">
+        <h1>Welcome to Your Birthday Countdown! 🖤</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="login-error" class="error"></p>
+    </div>
+    <div class="container hidden" id="countdown-page">
+        <h1>Countdown to Your 27th Birthday! 🖤</h1>
+        <div id="countdown">Calculating...</div>
+        <button id="message-btn">Check Today’s Message</button>
+        <p id="daily-message" class="fade-in"></p>
+    </div>
+    <div class="container hidden" id="birthday-page">
+        <h1 class="fade-in">Happy 27th Birthday! 🎉</h1>
+        <p class="fade-in">Today’s all about you! Here’s to 27 years of strength, beauty, and unstoppable vibes. 🖤 Let’s celebrate!</p>
+        <button onclick="triggerConfetti()">Replay Celebration</button>
+        <audio id="birthday-audio" src="birthday-tune.mp3"></audio>
+        <button onclick="playAudio()">Play Birthday Tune</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
