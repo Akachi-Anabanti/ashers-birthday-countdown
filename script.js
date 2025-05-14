@@ -87,13 +87,38 @@ function showDailyMessage() {
 
 // Confetti animation for birthday splash
 function triggerConfetti() {
-    confetti({
+    const duration = 2 * 1000; // 2 seconds
+    const animationEnd = Date.now() + duration;
+    const defaults = {
         particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 },
+        startVelocity: 30,
+        spread: 360,
+        ticks: 60,
+        zIndex: 999,
         colors: ['#FFD700', '#FF69B4', '#FFFFFF']
-    });
+    };
+
+    function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    const interval = setInterval(function () {
+        const timeLeft = animationEnd - Date.now();
+
+        if (timeLeft <= 0) {
+            return clearInterval(interval);
+        }
+
+        confetti({
+            ...defaults,
+            origin: {
+                x: randomInRange(0.1, 0.9),
+                y: randomInRange(0.1, 0.9)
+            }
+        });
+    }, 200);
 }
+
 
 // Play birthday audio
 function playAudio() {
