@@ -124,7 +124,8 @@ function triggerConfetti() {
         balloon.style.left = Math.random() * 100 + 'vw';
         balloon.style.backgroundColor = ['#FFD700', '#FF69B4', '#FFFFFF'][i % 3];
         balloon.style.animationDuration = (3 + Math.random() * 2) + 's';
-        ballon.style.zIndex=100
+        ballon.style.position='absolute';
+        ballon.style.zIndex=1000;
         
         birthdayPage.appendChild(balloon);
 
