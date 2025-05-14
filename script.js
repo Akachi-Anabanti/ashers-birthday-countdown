@@ -124,7 +124,8 @@ function triggerConfetti() {
         balloon.style.left = Math.random() * 100 + 'vw';
         balloon.style.backgroundColor = ['#FFD700', '#FF69B4', '#FFFFFF'][i % 3];
         balloon.style.animationDuration = (3 + Math.random() * 2) + 's';
-        document.body.appendChild(balloon);
+        
+        birthdayPage.appendChild(balloon);
 
         // Remove balloon after animation
         setTimeout(() => {
