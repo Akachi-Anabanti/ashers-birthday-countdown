@@ -101,3 +101,20 @@ button:hover {
         padding: 10px;
     }
 }
+
+.balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 40px;
+      height: 60px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50%;
+      animation: rise 5s linear forwards;
+    }
+
+    @keyframes rise {
+      to {
+        transform: translateY(-120vh);
+        opacity: 0;
+      }
+    }
